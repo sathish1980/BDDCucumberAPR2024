@@ -16,8 +16,9 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-Feature: MakeMyTrip Search functionality
 
+Feature: MakeMyTrip Search functionality
+@SIT
   Scenario: Verify user can search the flight with valid values
     Given Lauch the browser and enter MakemyTrip Url
     And Wait for Some to click on Adds
@@ -27,7 +28,7 @@ Feature: MakeMyTrip Search functionality
     And Click On Search button
     Then I validate the searchResult
     And I Close the Browser
-    
+  @Sanity  
   Scenario: SameCity Error
     Given Lauch the browser and enter MakemyTrip Url
     And Wait for Some to click on Adds

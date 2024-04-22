@@ -122,5 +122,13 @@ public class SearchPage extends Webelementclass{
 		
 	}
 	
+	public void ClickOnLoginPopup()
+	{
+		WaitForElementTobeClickable(driver, By.xpath("//*[@data-cy='closeModal']"));
+		ClickOnButton(driver.findElement(By.xpath("//*[@data-cy='closeModal']")));
+	
+	}
+	
+	
 
 }

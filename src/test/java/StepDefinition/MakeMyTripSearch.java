@@ -25,7 +25,8 @@ public void lauch_the_browser_and_enter_makemy_trip_url() throws IOException {
 @Given("Wait for Some to click on Adds")
 public void wait_for_some_to_click_on_adds() {
 	SearchPage sp = new SearchPage(driver);
-	//sp.CloseAdd();    
+	//sp.CloseAdd(); 
+	sp.ClickOnLoginPopup();
 }
 
 @When("I see a From location dorpdown I will select on it {string}")
